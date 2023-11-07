@@ -21,6 +21,7 @@
 	+ git commit -m "<message>": tạo ra các snapshot/version của mã nguồn
 	+ git remote add origin <url>: kết nối local với remote repository
 	+ git push origin master: đẩy các phiên bản lên remote repository
+	+ Tham khảo lệnh: git push origin --all >> đẩy tất cả files/phiên bản lên remote
 * 1 số lệnh có chức năng đặc thù
 	+ git clone <url>: sao chép 1 remote repository về local
 	+ git pull: kéo các phiên bản từ remote về local đã kết nối
