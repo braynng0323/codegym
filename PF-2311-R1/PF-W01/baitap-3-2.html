@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {background-color: #FFFDA9; size: 40; }
+        td {min-width: 50px;}
+        .blue {color:#0433FF;}
+        #heading {background-color: #D4FDD6; color:#0433FF;}
+        td > h2 {padding: 10px; margin: 0;}
+    </style>
+</head>
+<body>
+<form action="/baitap-3-2.html">
+<table>  
+    <tr>
+        <td colspan="4" id="heading" class="blue"><h2>Dang ky hoc vien</h2></td>
+    </tr>
+    <tr>
+        <td class="blue">Ho va ten</td>
+        <td colspan="2"><input style="width: 100%;" type="text"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="blue">Ngay sinh</td>
+        <td colspan="2"><input type="date"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="blue">Gioi tinh</td>
+        <td colspan="2">
+            <input type="radio" name="gender" id="Male">
+            <label for="Male">Nam</label>
+            <input type="radio" name="gender" id="Female">
+            <label for="Female">Nu</label>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="blue" valign="top" align="left">Dia chi</td>
+        <td colspan="2"><textarea style="width: 90%;" name="Address" id="Address" rows="5"></textarea></td>
+    </tr>
+    <tr>
+        <td class="blue">Lop</td>
+        <td colspan="2">
+            <select style="width: 150px;" name="Class" id="Class">
+                <option name="Lop1" value="Lop1">--Chon lop--</option>
+                <option name="Lop2" value="Lop2">Lop 1</option>
+                <option name="Lop3" value="Lop3">Lop 2</option>
+            </select>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td class="blue">Email</td>
+        <td colspan="2"><input type="email" name="email" id="Email"></td>
+    </tr>
+    <tr>
+        <td class="blue">So dien thoai</td>
+        <td colspan="2"><input   type="tel" name="tel" id="Tel"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2">
+            <button type="submit">Dang Ky</button>
+            <button type="reset">Nhap Lai</button>
+        </td>
+        <td></td>
+    </tr>
+</table> 
+</form> 
+</body>
+</html>

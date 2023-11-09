@@ -30,3 +30,12 @@
 - Cài đặt config lần đầu làm việc:
 	+ git config --global user.email "<email đăng ký>"
 	+ git config --global user.name "<tên git>"
+
+
+Tổng hợp các bước tạo và connect git local và remote
+
+1. Tạo git local
+	+ git init
+	+ git add . => để add tất cả file hiện tại
+	+ git commit -m "message"
+	+ git remote add origin <url>
