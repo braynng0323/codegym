@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <table>
+        <tr>
+            <td>Năm</td> 
+            <td><input type="text" id="yr"></td>
+        </tr>
+        <tr>
+            <td>Tháng </td>
+            <td><input type="text" id="mth"></td>
+        </tr>
+        <tr>
+            <td>Ngày </td>
+            <td><input type="text" id="day"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="m1()">Submit</button></td>
+        </tr>  
+        <tr>
+            <td><p>Kết qủa</p></td>
+            <td><p id="kq"></p></td>
+        </tr> 
+    </table>
+    </form>
+</body>
+<script>
+    function m1(){
+        let a = document.getElementById("yr").value
+        let b = document.getElementById("mth").value
+        let c = document.getElementById("day").value
+        let d = a + "-" + b + "-" + c 
+        alert(d)
+        document.getElementById("kq").innerText = d 
+        console.log(d)
+    }
+
+</script>
+</html>
