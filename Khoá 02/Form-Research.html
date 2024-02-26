@@ -1,0 +1,248 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form khảo sát</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;;
+            color: #111;
+            font-family: 'Helvetica', Arial, sans-serif;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+
+        .age {
+            cursor: pointer;
+            display: grid;
+            padding: 10px;
+        }
+
+        .age:focus {
+            background-color: #d7ff73;
+        }
+
+        /* Lương */
+        .salary {
+            display: grid;
+            padding: 10px;
+        }
+
+        .salary:focus {
+            background-color: #d7ff73;
+        }
+
+        .gender:focus {
+            background-color: #d7ff73;
+        }
+
+        .gender-other p {
+            font-size: 15px;
+            display: none;
+        }
+
+        .gender-other:focus p {
+            display: block;
+        }
+
+        .prod .gender .time .newProd .features {
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .prod:focus {
+            background-color: #d7ff73;
+
+        }
+
+        .time:focus {
+            background-color: #d7ff73;
+        }
+
+        .newProd:active {
+            background-color: #d7ff73;
+        }
+
+        .features:focus {
+            background-color: #d7ff73;
+        }
+
+
+        .table2-agree {
+            padding: 10px;
+            cursor: pointer;
+
+            table,
+            th,
+            td {
+                font-size: 20px;
+                text-align: center;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th {
+                background-color: #ededed
+            }
+
+
+            tr:hover {
+                background-color: #ededed;
+            }
+
+        }
+
+        .end {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr>
+    <!-- age -->
+    <div class="age">
+        <h6>What is your age range?</h6>
+        <select name="age" id="age">
+            <option value="18-24" size="3">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-50">35 - 50</option>
+            <option value="50+">50+</option>
+        </select>
+    </div>
+    <br>
+
+    <!-- salary -->
+    <div class="salary">
+        <h6>What is your yearly income range?</h6>
+        <select name="salary" id="salary">
+            <option value="0-25000">$0 - $25,000</option>
+            <option value="25001-50000">$25,001 - 50,000</option>
+            <option value="50001-100000">$50,001 - $100,000</option>
+            <option value="100k+">$100,000+</option>
+        </select>
+    </div>
+    <br>
+    <!-- Gender -->
+    <div class="Gender">
+        <h6>Gender Identity</h6>
+        <!-- <form action=""> -->
+        <input type="radio" name="Gender" id="Male"> <span>Male</span><br>
+        <input type="radio" name="Gender" id="Female"> <span>Female</span><br>
+        <input type="radio" name="Gender" id="Nonbinary"> <span>Nonbinary</span><br>
+        <div class="gender-other">
+            <input type="radio" name="Gender" id="Other"> <span>Other</span><br>
+            <input type="text" name="Other" id="Other">
+            <br><br>
+            <p>Maximum of 250 characters. Currently Used: 0 characters</p>
+        </div>
+        <!-- </form> -->
+    </div>
+    <br>
+
+    <div class="Prod">
+        <h6>
+            Which of the following products have your purchased in the last 2 months.
+            Please check all that apply.
+        </h6>
+        <input type="checkbox" name="Prod" id="Prod1"> <span>Product 1</span><br>
+        <input type="checkbox" name="Prod" id="Prod1"> <span>Product 2</span><br>
+        <input type="checkbox" name="Prod" id="Prod3"> <span>Product 3</span><br>
+    </div>
+    <br>
+
+    <div class="time">
+        <h6>How often would you use our new product?</h6>
+        <input type="radio" name="time" id="Daily"> <span>Daily</span><br>
+        <input type="radio" name="time" id="Weekly"> <span>Weekly</span><br>
+        <input type="radio" name="time" id="Monthly"> <span>Monthly</span><br>
+    </div>
+    <br>
+    <div class="newProd">
+        <h6>How often would you use our new product?</h6>
+        <table>
+            <tr>
+                <th>$</th>
+                <th><input type="text" size="2"></th>
+                <th>.</th>
+                <th><input type="text" size="1"></th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td></td>
+                <td>Cents</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <!-- comment -->
+    <div class="features">
+        <h6>What features would you like to see in the new product.</h6>
+        <textarea name="features" id="features" cols="20" rows="5"></textarea>
+    </div><br>
+
+    <p>Please rate your level of agreement with the following statements.</p>
+    <!-- Table2 -->
+    <div>
+        <table class="table2-agree">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+
+            <tr>
+                <td>Our products are priced fairly.</td>
+                <td>1 <input type="radio" name="table2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2" id="StrAgree"></td>
+            </tr>
+
+            <tr>
+                <td>Our products are high quality.</td>
+                <td>1 <input type="radio" name="table2-1" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2-1" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2-1" id="Agree"></td>
+                <td>4 <input type="radio" name="table2-1" id="StrAgree"></td>
+            </tr>
+
+            <tr>
+                <td>You would recommend our product to a friend or coworker.</td>
+                <td>1 <input type="radio" name="table2-2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2-2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2-2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2-2" id="StrAgree"></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary">Submit form</button>
+    <br><br>
+
+    <div class="end">
+        <p>
+            This site is protected by reCAPTCHA Enterprise and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply
+        </p>
+    </div>
+</body>
+</body>
+
+</html>
