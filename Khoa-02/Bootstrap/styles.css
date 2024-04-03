@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow: auto;
+}
+:root {
+    --bggradient1: linear-gradient(to bottom, #dd2476, #ff512f);
+    --Mont: "Montserrat", cursive;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+    font-family: var(--Mont);
+    line-height: 1.8;
+}
+p {
+    font-size: 0.9rem;
+}
+
+.primary-btn {
+    border-radius: 60px;
+    background-color: white;
+    border: 1px solid #a1a1a1;
+}
+.primary-btn:hover {
+    color:rgb(248, 248, 248);
+    background-color: rgb(0, 44, 94);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+header {
+    background: var(--bggradient1);
+    min-height: 600px;
+    padding-bottom: 60px;
+}
+
+header a {
+    color: white;
+    font-size: 0.9em;
+}
+.navbar-brand {
+    padding-left: 8rem;
+}
+.nav-item:last-child {
+    padding-right: 8rem;
+}
+.nav-item {
+    padding: 0.9rem;
+    font-weight: 400;
+}
+.nav-link:hover {
+    color:black;
+}
+
+header h1 {
+    font-weight: bold;
+    padding: 0.15em;
+}
+header p {
+    padding: 0.15em;
+}
+
+header img {
+    width: 90%;
+}
+
+/* Section 1 */
+
+.section-1 {
+    padding: 20vmin 0vmin;
+}
+
+.section-1 img {
+    opacity: 0.85;
+    border-radius: 0.5rem;
+}
+
+.section-1 .row .col-md-6:last-child {
+    position: relative;
+}
+
+.section-1 .panel {
+    position: absolute;
+    background: white;
+    border-radius: 0.5rem;
+    z-index: 1;
+    height: 100%;
+    bottom: -3rem;
+    left: -10rem; 
+}
+
+/* Section 2 */
+.cover {
+    width:100%;
+    height: 80vmin;
+    background: url('/Khoa-02/Bootstrap/assets/pexels-photo-452738.jpeg');
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    z-index: 1;
+}
+.cover .content {
+    width: 100%;
+    height: 100%;
+    padding-top: 19vmin;
+    background: rgba(0,0,0, 0.7);
+    color: white;
+    position: relative;
+}
+.cover .content h2 {
+    font-weight: bold;
+}
+
+.numbers {
+    margin-top: -15vmin;
+}
+.number--item {
+    position: relative;
+    z-index: 1;
+    background: white;
+    min-width: 17vmin;
+    min-height: 12vmin;
+    padding: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 15px 0px rgba(255,0,0, 0.35);
+}
+.number--item h3 {
+    color: tomato;
+}
